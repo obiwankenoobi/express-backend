@@ -5,6 +5,9 @@ this repo is a simple boilerplate for express application with basic features as
 this boilerplate built with passport auth with mongo database: 
 simply add your login data in the config.js file and uncomment the necessary part from db/mongoos.js
 or , use it as is on localhost. 
+passport have to get two fields from the client to work: 
+**password** // (must be named "password")
+**username** // (must be name "username")
 
 # email activation 
 on signup the user will get an email to activate their account 
