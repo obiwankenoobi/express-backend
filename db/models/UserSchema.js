@@ -5,7 +5,6 @@ let passportLocalMongoose = require('passport-local-mongoose');
 
 var UserSchema = mongoose.Schema({
     email: { type: String, index: true, unique: true, required: true },
-    //businessName: { type: String, index: true, unique: true, required: true},
     active: {type: Boolean}, // the user activate his account
     login: {type: Boolean}, // the user is login or not
     dateOfRegistration: {type: Date},
