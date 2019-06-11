@@ -1,0 +1,66 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add dotnenv
+
+PATH: 
+  /Users/artiumsirchenko/.pyenv/shims:/Users/artiumsirchenko/.pyenv/plugins/pyenv-virtualenv/shims:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "express-boilerplate",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www"
+    },
+    "dependencies": {
+      "body-parser": "~1.18.2",
+      "cookie-parser": "~1.4.3",
+      "ddos": "^0.1.31",
+      "debug": "~2.6.9",
+      "express": "~4.15.5",
+      "express-session": "^1.15.6",
+      "jade": "~1.11.0",
+      "jsonwebtoken": "^8.3.0",
+      "mongodb": "^3.1.1",
+      "mongoose": "^5.2.5",
+      "mongoose-unique-validator": "^2.0.1",
+      "morgan": "~1.9.0",
+      "nodemailer": "^4.6.7",
+      "passport": "^0.4.0",
+      "passport-local": "^1.0.0",
+      "passport-local-mongoose": "^5.0.1",
+      "serve-favicon": "^2.4.5"
+    },
+    "main": "app.js",
+    "author": "",
+    "license": "ISC",
+    "description": ""
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/dotnenv: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:65019:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:132430:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:133413:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:133333:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)

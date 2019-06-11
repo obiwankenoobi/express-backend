@@ -1,21 +1,20 @@
-let MongoClient = require('mongodb').MongoClient;
-let mongoose = require('mongoose');
-let config = require('../routes/config')
-
-
+const mongoose = require("mongoose");
 
 //@@@@@@@@@@@@@ if you use local host @@@@@@@@@@@@@@@@@
-var url = "mongodb://localhost:27017/db";
-mongoose.connect(url, { useNewUrlParser: true }, console.log('connected to mongo'));
-
-
+const url = process.env.MONGO_DB_ADDRESS;
+console.log("process.env.MONGO_DB_ADDRESS", process.env.MONGO_DB_ADDRESS);
+mongoose.connect(
+  url,
+  { useNewUrlParser: true },
+  console.log("connected to mongo")
+);
 
 //@@@@@@@@@@@@@ if you dont use local host @@@@@@@@@@@@@@@@@
 
-// mongoose.connect(mongoUrl, {
+// mongoose.connect(process.env.MONGO_DB_ADDRESS, {
 //     auth: {
-//       user: config.mongoUsername,
-//       password: config.mongoPw
+//       user: process.env.MONGO_USERNAME,
+//       password: process.env.MONGO_PASSWORD
 //     }
 //   })
 //   .then(() => console.log('connection successful'))
@@ -25,5 +24,4 @@ mongoose.connect(url, { useNewUrlParser: true }, console.log('connected to mongo
 
 mongoose.Promise = global.Promise;
 
-
-module.exports = {mongoose};
+module.exports = { mongoose };
