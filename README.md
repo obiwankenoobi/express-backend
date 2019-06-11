@@ -1,5 +1,9 @@
 # express-backend 
-this repo is a simple boilerplate for express application with basic features as:
+Two mani features of this boilerplate are my most pain in the ass features to boilerplate therefore are the ones I decided to include. 
+
+First is of course the ability to authenticate and authorize user. Which we are doing here with `password` and `password-jwt`.
+
+The second is to upload and stream images, simple but pain in the ass to boilerplate on every project.
 
 
 
