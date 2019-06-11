@@ -1,18 +1,30 @@
 # express-backend 
 this repo is a simple boilerplate for express application with basic features as:
 
-# Auth - using passport-mongoose 
-this boilerplate built with passport auth with mongo database: 
-simply add your login data in the config.js file and uncomment the necessary part from db/mongoos.js
-or , use it as is on localhost. 
-passport have to get two fields from the client to work: 
-**password** // (must be named "password")
-**username** // (must be name "username")
 
-# email activation 
-on signup the user will get an email to activate their account 
-**note** - that require from you to have a domain name or smtp server to send the email. 
-simply add the username and the password from your smtp account in the config.js file and you good to go. 
-on activation - the user schema in the db will be updated with the value "true" on "active" prop. 
-then passport can recognize the user as verified account. 
+
+### `./api/auth.js`
+`/api/signup` - route to sign a new user in databe
+
+`/api/login` - route to login and create JWT token to use in protected outes
+
+`/api/private` - route to show how the protected route work
+
+<br>
+
+### `./api/image.js`
+`/api/upload-new-media` - route to upload image to db
+
+`/api/get-image/:file_name` - route to get a steam of the image
+
+<br>
+
+### `.env` 
+
+```
+MONGO_DB_ADDRESS=<MONGO_ADDRESS>
+COOKIE_SECRET=<SECRET>
+MONGO_USERNAME=<USERNAME> // if you using with external db
+MONGO_PASSWORD=<PASSWORD> // if you using with external db
+```
 
